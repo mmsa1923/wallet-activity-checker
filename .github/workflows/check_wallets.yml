@@ -1,10 +1,9 @@
 name: Check Wallet Activity
 
 on:
- on:
   schedule:
-    - cron: "0 * * * *"  # Rulează automat la fiecare oră fixă (la minutul 0 al fiecărei ore)
-  workflow_dispatch: {}    # Îți permite să apeși manual pe butonul de start
+    - cron: "0 * * * *"  # Rulează automat din oră în oră
+  workflow_dispatch: {}    # Permite pornirea manuală cu buton
 
 permissions:
   contents: write
@@ -38,6 +37,6 @@ jobs:
         run: |
           git config user.name "wallet-activity-bot"
           git config user.email "actions@github.com"
-          git add activity_state.json
+          git add activity_state.json || echo "No state file yet"
           git diff --staged --quiet || git commit -m "Update active wallets state"
           git push || echo "No changes to push"
