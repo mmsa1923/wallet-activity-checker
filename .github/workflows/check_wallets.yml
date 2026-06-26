@@ -1,4 +1,4 @@
-name: wallet-activity-checker
+name: Check Wallet Activity
 
 on:
   schedule:
