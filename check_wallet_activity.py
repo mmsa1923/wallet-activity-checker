@@ -15,6 +15,7 @@ STATE_FILE = "activity_state.json"
 ACTIVE_THRESHOLD_HOURS = float(os.environ.get("ACTIVE_THRESHOLD_HOURS", "24"))
 RATE_LIMIT_SLEEP_SEC = 0.25
 
+
 def get_wallets_from_dune():
     print(f"[i] Se descarcă datele de la Dune Query ID: {DUNE_QUERY_ID}...")
     url = f"https://api.dune.com/api/v1/query/{DUNE_QUERY_ID}/results"
@@ -30,6 +31,7 @@ def get_wallets_from_dune():
     except Exception as e:
         print(f"[!] Eroare critică la descărcarea din Dune: {e}")
         return []
+
 
 def get_last_tx_timestamp(wallet_address):
     params = {
@@ -50,15 +52,28 @@ def get_last_tx_timestamp(wallet_address):
         return int(data["result"][0]["timeStamp"])
     return None
 
-def trimite_telegram(mesaj):
+
+def trimite_telegram(mesaj) -> bool:
+    """Returnează True doar dacă Telegram a confirmat că a primit mesajul."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        return
+        print("[!] TELEGRAM_BOT_TOKEN/CHAT_ID nesetate - nu trimit nimic.")
+        return False
+
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mesaj, "parse_mode": "Markdown"}
+
     try:
-        requests.post(url, json=payload, timeout=10)
+        resp = requests.post(url, json=payload, timeout=10)
+        result = resp.json()
+        if result.get("ok") is True:
+            return True
+        else:
+            print(f"[!] Telegram a refuzat mesajul: {result}")
+            return False
     except Exception as e:
-        print(f"Eroare Telegram: {e}")
+        print(f"[!] Eroare de rețea la trimiterea către Telegram: {e}")
+        return False
+
 
 def main():
     if not DUNE_API_KEY or not DUNE_QUERY_ID:
@@ -75,17 +90,20 @@ def main():
         try:
             with open(STATE_FILE, "r") as f:
                 previous_state = json.load(f)
-        except:
+        except Exception:
             pass
 
     now = time.time()
     current_state = {}
     newly_active = []
+    errors = 0
 
     for i, addr in enumerate(wallets, start=1):
         try:
             last_ts = get_last_tx_timestamp(addr)
-        except Exception:
+        except Exception as e:
+            print(f"[!] Eroare la {addr}: {e}")
+            errors += 1
             time.sleep(RATE_LIMIT_SLEEP_SEC)
             continue
 
@@ -97,7 +115,7 @@ def main():
 
         hours_since = (now - last_ts) / 3600
         is_active = hours_since <= ACTIVE_THRESHOLD_HOURS
-        current_state[addr] = {"active": is_active}
+        current_state[addr] = {"active": is_active, "hours_since": round(hours_since, 1)}
 
         was_active_before = previous_state.get(addr, {}).get("active", False)
         if is_active and not was_active_before:
@@ -109,14 +127,27 @@ def main():
     with open(STATE_FILE, "w") as f:
         json.dump(current_state, f, indent=2)
 
-    if newly_active:
-        mesaj = f"🚨 *{len(newly_active)} SNIPERI DIN DUNE AU DEVENIT ACTIVI!* 🚨\n\n"
-        for addr in newly_active[:15]:
-            mesaj += f"👤 `{addr}`\n🔗 [BaseScan](https://basescan.org/address/{addr})\n\n"
-        if len(newly_active) > 15:
-            mesaj += f"🔍 ...și încă {len(newly_active) - 15} portofele active."
-        trimite_telegram(mesaj)
-        print("[+] Alertă trimisă pe Telegram!")
+    total_active = sum(1 for s in current_state.values() if s.get("active"))
+    print(f"[i] Rezumat: {len(wallets)} verificate, {errors} erori, "
+          f"{total_active} active TOTAL (în ultimele {ACTIVE_THRESHOLD_HOURS}h), "
+          f"{len(newly_active)} NOI active față de rularea anterioară.")
+
+    if not newly_active:
+        print("[i] Niciun wallet nou activ - nu trimit nimic pe Telegram (comportament normal, nu eroare).")
+        return
+
+    mesaj = f"🚨 *{len(newly_active)} SNIPERI DIN DUNE AU DEVENIT ACTIVI!* 🚨\n\n"
+    for addr in newly_active[:15]:
+        mesaj += f"👤 `{addr}`\n🔗 [BaseScan](https://basescan.org/address/{addr})\n\n"
+    if len(newly_active) > 15:
+        mesaj += f"🔍 ...și încă {len(newly_active) - 15} portofele active."
+
+    sent_ok = trimite_telegram(mesaj)
+    if sent_ok:
+        print("[+] Alertă confirmată trimisă pe Telegram!")
+    else:
+        print("[!] Alerta NU a fost confirmată ca trimisă - vezi eroarea de mai sus.")
+
 
 if __name__ == "__main__":
     main()
