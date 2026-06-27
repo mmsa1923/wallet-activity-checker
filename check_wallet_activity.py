@@ -3,19 +3,17 @@ import time
 import requests
 import json
 
-ETHERSCAN_API_KEY = os.environ.get("ETHERSCAN_API_KEY", "")
+ALCHEMY_RPC_URL = os.environ.get("ALCHEMY_RPC_URL", "")  # ex: https://base-mainnet.g.alchemy.com/v2/CHEIA_TA
 DUNE_API_KEY = os.environ.get("DUNE_API_KEY", "")
 DUNE_QUERY_ID = os.environ.get("DUNE_QUERY_ID", "")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
-CHAIN_ID = 8453  # Base
-API_URL = "https://api.etherscan.io/v2/api"
 STATE_FILE = "activity_state.json"
 ACTIVE_THRESHOLD_HOURS = float(os.environ.get("ACTIVE_THRESHOLD_HOURS", "24"))
-RATE_LIMIT_SLEEP_SEC = 0.25
+RATE_LIMIT_SLEEP_SEC = 0.1
 
-_debug_prints_done = 0  # DIAGNOSTIC: limităm la primele câteva, ca să nu inundăm logul
+_debug_prints_done = 0
 
 
 def get_wallets_from_dune():
@@ -36,32 +34,48 @@ def get_wallets_from_dune():
 
 
 def get_last_tx_timestamp(wallet_address):
+    """
+    Foloseste Alchemy (alchemy_getAssetTransfers) ca sa gaseasca ultima
+    tranzactie TRIMISA de acest wallet, indiferent de tip (ETH, ERC20, NFT).
+    Returneaza timestamp unix, sau None daca nu gaseste nimic.
+    """
     global _debug_prints_done
 
-    params = {
-        "chainid": CHAIN_ID,
-        "module": "account",
-        "action": "txlist",
-        "address": wallet_address,
-        "startblock": 0,
-        "endblock": 99999999,
-        "page": 1,
-        "offset": 1,
-        "sort": "desc",
-        "apikey": ETHERSCAN_API_KEY,
+    payload = {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "alchemy_getAssetTransfers",
+        "params": [{
+            "fromBlock": "0x0",
+            "toBlock": "latest",
+            "fromAddress": wallet_address,
+            "category": ["external", "erc20", "erc721", "erc1155"],
+            "order": "desc",
+            "maxCount": "0x1",
+            "withMetadata": True,
+        }],
     }
-    resp = requests.get(API_URL, params=params, timeout=10)
+
+    resp = requests.post(ALCHEMY_RPC_URL, json=payload, timeout=15)
     data = resp.json()
 
-    if data.get("status") == "1" and data.get("result"):
-        return int(data["result"][0]["timeStamp"])
+    if "error" in data:
+        global _debug_prints_done
+        if _debug_prints_done < 3:
+            print(f"[DEBUG] Răspuns brut Alchemy (eroare) pentru {wallet_address}: {json.dumps(data)}")
+            _debug_prints_done += 1
+        return None
 
-    # DIAGNOSTIC: dacă a eșuat, arătăm EXACT ce a răspuns Etherscan, pentru primele 3 cazuri
-    if _debug_prints_done < 3:
-        print(f"[DEBUG] Răspuns brut Etherscan pentru {wallet_address}: {json.dumps(data)}")
-        _debug_prints_done += 1
+    transfers = data.get("result", {}).get("transfers", [])
+    if not transfers:
+        return None
 
-    return None
+    timestamp_iso = transfers[0].get("metadata", {}).get("blockTimestamp")
+    if not timestamp_iso:
+        return None
+
+    struct_time = time.strptime(timestamp_iso, "%Y-%m-%dT%H:%M:%S.%fZ")
+    return int(time.mktime(struct_time) - time.timezone)
 
 
 def trimite_telegram(mesaj) -> bool:
@@ -83,10 +97,11 @@ def trimite_telegram(mesaj) -> bool:
 
 
 def main():
-    if not ETHERSCAN_API_KEY:
-        print("[!] ETHERSCAN_API_KEY este GOL/nesetat - asta e probabil cauza!")
+    if not ALCHEMY_RPC_URL:
+        print("[!] ALCHEMY_RPC_URL nesetat! Pune URL-ul tau complet Alchemy ca secret pe GitHub.")
+        return
     else:
-        print(f"[i] ETHERSCAN_API_KEY setat, lungime: {len(ETHERSCAN_API_KEY)} caractere.")
+        print(f"[i] ALCHEMY_RPC_URL setat, lungime: {len(ALCHEMY_RPC_URL)} caractere.")
 
     if not DUNE_API_KEY or not DUNE_QUERY_ID:
         print("[!] Lipsesc cheile DUNE_API_KEY sau DUNE_QUERY_ID!")
@@ -110,6 +125,7 @@ def main():
     newly_active = []
     errors = 0
     none_count = 0
+    hours_seen = []
 
     for i, addr in enumerate(wallets, start=1):
         try:
@@ -128,6 +144,7 @@ def main():
             continue
 
         hours_since = (now - last_ts) / 3600
+        hours_seen.append((hours_since, addr))
         is_active = hours_since <= ACTIVE_THRESHOLD_HOURS
         current_state[addr] = {"active": is_active, "hours_since": round(hours_since, 1)}
 
@@ -146,6 +163,12 @@ def main():
           f"{none_count} fără NICIO tranzacție găsită, "
           f"{total_active} active TOTAL (în ultimele {ACTIVE_THRESHOLD_HOURS}h), "
           f"{len(newly_active)} NOI active față de rularea anterioară.")
+
+    if hours_seen:
+        hours_seen.sort(key=lambda x: x[0])
+        print("[i] Cele mai RECENT active 5 wallet-uri (indiferent de prag):")
+        for h, a in hours_seen[:5]:
+            print(f"    {a} -> ultima tranzacție acum {h:.1f} ore ({h/24:.1f} zile)")
 
     if not newly_active:
         print("[i] Niciun wallet nou activ - nu trimit nimic pe Telegram (comportament normal, nu eroare).")
