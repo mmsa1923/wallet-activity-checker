@@ -54,22 +54,18 @@ def get_last_tx_timestamp(wallet_address):
 
 
 def trimite_telegram(mesaj) -> bool:
-    """Returnează True doar dacă Telegram a confirmat că a primit mesajul."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("[!] TELEGRAM_BOT_TOKEN/CHAT_ID nesetate - nu trimit nimic.")
         return False
-
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": mesaj, "parse_mode": "Markdown"}
-
     try:
         resp = requests.post(url, json=payload, timeout=10)
         result = resp.json()
         if result.get("ok") is True:
             return True
-        else:
-            print(f"[!] Telegram a refuzat mesajul: {result}")
-            return False
+        print(f"[!] Telegram a refuzat mesajul: {result}")
+        return False
     except Exception as e:
         print(f"[!] Eroare de rețea la trimiterea către Telegram: {e}")
         return False
@@ -97,6 +93,8 @@ def main():
     current_state = {}
     newly_active = []
     errors = 0
+    none_count = 0
+    hours_seen = []  # DIAGNOSTIC: colectăm toate orele găsite, ca să vedem distribuția reală
 
     for i, addr in enumerate(wallets, start=1):
         try:
@@ -111,9 +109,11 @@ def main():
 
         if last_ts is None:
             current_state[addr] = {"active": False}
+            none_count += 1
             continue
 
         hours_since = (now - last_ts) / 3600
+        hours_seen.append((hours_since, addr))
         is_active = hours_since <= ACTIVE_THRESHOLD_HOURS
         current_state[addr] = {"active": is_active, "hours_since": round(hours_since, 1)}
 
@@ -129,8 +129,18 @@ def main():
 
     total_active = sum(1 for s in current_state.values() if s.get("active"))
     print(f"[i] Rezumat: {len(wallets)} verificate, {errors} erori, "
+          f"{none_count} fără NICIO tranzacție găsită, "
           f"{total_active} active TOTAL (în ultimele {ACTIVE_THRESHOLD_HOURS}h), "
           f"{len(newly_active)} NOI active față de rularea anterioară.")
+
+    # DIAGNOSTIC NOU: arătăm cele mai recente 5 wallet-uri, indiferent de prag
+    if hours_seen:
+        hours_seen.sort(key=lambda x: x[0])
+        print("[i] Cele mai RECENT active 5 wallet-uri (indiferent de prag):")
+        for h, a in hours_seen[:5]:
+            print(f"    {a} -> ultima tranzacție acum {h:.1f} ore ({h/24:.1f} zile)")
+    else:
+        print("[!] NICIUN wallet din toate cele verificate nu are vreo tranzacție gasită. Posibil bug, nu doar prag strict.")
 
     if not newly_active:
         print("[i] Niciun wallet nou activ - nu trimit nimic pe Telegram (comportament normal, nu eroare).")
