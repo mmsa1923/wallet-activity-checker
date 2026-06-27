@@ -1,32 +1,4 @@
-"""
-Wallet Hunter v2 - detecție prin SIMULARE, nu prin decodare de calldata
-==========================================================================
 
-DE CE versiunea asta e mai bună decât v1:
-  v1 decoda calldata căutând selectori cunoscuți (swapExactETHForTokens etc.)
-  Problema: dacă wallet-ul țintă trece prin un agregator/Settler (ex: 0x
-  Protocol "Settler", 1inch, Odos, Uniswap Universal Router), calldata e
-  complet diferit și NU se potrivește cu niciun selector cunoscut. Practic
-  v1 e oarbă exact la genul de wallet sofisticat pe care vrei să-l urmărești.
-
-  v2 nu mai ghicește din calldata. Trimite tranzacția pending la
-  alchemy_simulateAssetChanges, care rulează tranzacția într-un mediu
-  simulat și returnează EXACT ce active se transferă - indiferent de
-  router, agregator, settler, sau orice abstractizare e pe dedesubt.
-  E aceeași tehnică folosită de wallet-uri/dapps ca să-ți arate "preview"
-  înainte să semnezi o tranzacție.
-
-Costuri reale de care să fii conștient:
-  - Free tier Alchemy: 1000 simulări/zi. Dacă urmărești wallet-uri foarte
-    active, poți atinge plafonul - ai nevoie de tier plătit pentru volum mare.
-  - Simularea are latență proprie (sute de ms) - mai lentă decât un simplu
-    pattern-match pe calldata, dar mult mai precisă.
-
-NU cumpără automat nimic. E radar, nu trigger.
-
-Instalare:
-    pip install web3 aiohttp python-dotenv
-"""
 
 import asyncio
 import json
