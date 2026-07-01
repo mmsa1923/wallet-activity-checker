@@ -1,534 +1,534 @@
 {
-  "0x3b8eb166f9f80b5429e83c699fdf9699dfbf3b81": {
-    "active": false,
-    "hours_since": 880.5
-  },
-  "0x0d7901665a57dd93647ebf7da232629e5f4dd591": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x71d468ba1ce7c524a12545a1a4cfae2b8b816411": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x6d8bcd9e870e22340b6c270ba6173991db0f763e": {
-    "active": true,
-    "hours_since": 10.6
-  },
-  "0x639fa26d6b7132d65ed20ee033313eab59e18bc1": {
+  "0xa0befaf0d44a9f9684edb5163be93bfc8ee353d0": {
     "active": true,
     "hours_since": 0.0
   },
-  "0xeba1e366019accf7b2bacb386a31d64a7c2cf7cf": {
-    "active": false,
-    "hours_since": 607.4
-  },
   "0x51728a928afed83f755c14a5a42fd50fa947aab3": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 620.9
   },
-  "0x498581ff718922c3f8e6a244956af099b2652b2b": {
-    "active": true,
-    "hours_since": -0.0
-  },
-  "0x0d1b2bd8f976249f64b14aa0c20614ea919c5c83": {
-    "active": true,
-    "hours_since": 10.6
-  },
-  "0x17ed96d91880449d2f7aab7156c63cfaac78def4": {
+  "0xaa33684b9d07903f50e72a8dc74f8ac1f8acf55a": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 883.2
   },
-  "0x9ea86b09d237a0d1405dc536093430fac5068c0f": {
-    "active": true,
-    "hours_since": 10.9
-  },
-  "0x9bd6fd9d8485646f4b2232274aa4d335dac30cb2": {
+  "0x597d104dc2c10b09bca46b12b27a05f0d69f8607": {
     "active": false,
-    "hours_since": 618.7
+    "hours_since": 882.9
   },
-  "0xecdb008731d4689910efa3c3f3fb88a61e43239a": {
+  "0xd63b45fbf5a7caaa12dee158fdd734e543f4a8ca": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 842.8
   },
-  "0x0489a2814e133a6fc6b9435ae76bd89958eafbfa": {
+  "0x07f255386c2ca95942f973ddad701c74c1cb287c": {
     "active": true,
-    "hours_since": 10.6
+    "hours_since": 12.9
+  },
+  "0x159d16320a85f5d7311b45e4e37e197b5f0fb173": {
+    "active": false,
+    "hours_since": 858.1
   },
   "0x61cd5bb89e2b6b2fac8a48bfb8494ed802537929": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.1
+  },
+  "0x3f451e9f9be4b7ab8738e9f71fb9777e8992556d": {
+    "active": false,
+    "hours_since": 883.0
+  },
+  "0x36451f6c8a46e3510fbd2007d3d1533fcdf5c219": {
+    "active": false,
+    "hours_since": 883.0
+  },
+  "0x15fcd35dcf11d41a69c34182951499126d3f6516": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0xe32992ec0b4d10f6ea744b6c5a0450a5085bd681": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x49f5b3b3dabe6fc4b171f9be986dca4de9f466e1": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0xeba1e366019accf7b2bacb386a31d64a7c2cf7cf": {
+    "active": false,
+    "hours_since": 609.7
+  },
+  "0xefc63467e013b88ff056dee5e7c984985b0aa6db": {
+    "active": false,
+    "hours_since": 58.7
+  },
+  "0x9c2c36dcfba51c8d32ceaf348af0a856f6261c0a": {
+    "active": false,
+    "hours_since": 882.7
   },
   "0x6ecff83dc7572d320239f9d6d81990ff4400ee5b": {
     "active": false,
-    "hours_since": 880.7
+    "hours_since": 883.0
   },
-  "0x481203772cb3bc1f3af5d00d94360315c33405d2": {
-    "active": true,
-    "hours_since": 10.5
-  },
-  "0x36fa58a7e3e07e9398d12dce261c523a496ae708": {
+  "0x6e8b5c33ce2931b7c33f27ef3acab1964062f358": {
     "active": false,
-    "hours_since": 880.5
+    "hours_since": 883.0
   },
   "0xd7be080507528ac2079a4a672d877742a8bf795d": {
     "active": true,
     "hours_since": 0.1
   },
-  "0xf73da48f34b6e01c08bd56e27729e88e60538e5d": {
-    "active": true,
-    "hours_since": 16.4
-  },
-  "0x5338d10fc227497cf37fc68124419b7e52f35872": {
+  "0x98b2b96ac1bc59f76ea59b56ee6b540b4ca1d3c1": {
     "active": false,
-    "hours_since": 855.9
-  },
-  "0x7187bc7ecc89af7926b1b00aa15cc5b92b7b161c": {
-    "active": false,
-    "hours_since": 618.7
-  },
-  "0x12d2e9c0014d60c13c8e37f97e6e67f67f584628": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x49f5b3b3dabe6fc4b171f9be986dca4de9f466e1": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x06fd54c04c5abb8e5cbe5dd6701b5c1c58aef10e": {
-    "active": false,
-    "hours_since": 607.6
-  },
-  "0x429333b40bcbf3dba5b61300d880967133c9c4d7": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xceb71ad8b896e88aa65674188020cf2bcb7e01bf": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xfbd7eb63365c92a0e62841a218feb0fe98d82d0e": {
-    "active": true,
-    "hours_since": 10.7
-  },
-  "0x159d16320a85f5d7311b45e4e37e197b5f0fb173": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x4a6d73972b78d7a9d03723614049a82b824b9a19": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x81467f4563452abd26113803a3f645f859bfb3de": {
-    "active": false,
-    "hours_since": 903.8
-  },
-  "0x807bbf648bb20af3603fa94028291309c1955b9b": {
-    "active": false,
-    "hours_since": 880.5
-  },
-  "0xa177cea0ab7276170f4b99022457fcf456fe11cc": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xd792faf42fac43db1fc60c617fda5f711622ce9f": {
-    "active": false,
-    "hours_since": 379.5
-  },
-  "0x285ef4947ea90bf377bd62508f89249de04f3f1c": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xec8c0e8dc2712baee245f002a9edc559da223481": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x75fa6f6811c88f45261e1a23e91212a6c675a370": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x3b0adad60d1cd1b1da10d98f4c80337cd0a51c45": {
-    "active": false,
-    "hours_since": 618.7
-  },
-  "0xe1b5e58ef96c5b7fdc54cdeecfa47d4ff53c8bc4": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x79d99b721f62a6ed1197c33e69ef930d1b274234": {
-    "active": false,
-    "hours_since": 880.7
-  },
-  "0x93e405ac054452c5f1ee76ad7274f477e864ffb2": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xb1ddd16a1af35531e91be3adefcee7fdde183a27": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x5d6ba15bf83fe3b30427a42f68e9086690a83d8e": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xae2f8a70a5ea8dd9a45e5c74a5b926ac2de87736": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x8447d446bf91a507a3d64d72a9a08b00324ad605": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0x0b58299eb3087ee8d221a00dff7b31c65dfe2820": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xd63b45fbf5a7caaa12dee158fdd734e543f4a8ca": {
-    "active": false,
-    "hours_since": 840.5
-  },
-  "0x07f255386c2ca95942f973ddad701c74c1cb287c": {
-    "active": true,
-    "hours_since": 10.6
-  },
-  "0x4250e9c4158bb9cf602d7b713e20190e6d8bef4d": {
-    "active": false,
-    "hours_since": 880.9
-  },
-  "0x7d4482928053ca49a6a49a449d2bbb470fab90a7": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xc0b0f5afb40d32671b803d95ef5e92f563013c56": {
-    "active": true,
-    "hours_since": 10.5
-  },
-  "0x6d92c912a165f0cd76cabbbf6de7f29253857e18": {
-    "active": false,
-    "hours_since": 607.4
-  },
-  "0x2af4fb83847d85b37300baa95fe7d698a3bdab2d": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0x2d4f1054f194eb16e35adc89f605c028d3abb0df": {
-    "active": false,
-    "hours_since": 607.4
-  },
-  "0xd0667b1d34234f70d14de3fed25d47a33047f807": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x3f451e9f9be4b7ab8738e9f71fb9777e8992556d": {
-    "active": false,
-    "hours_since": 880.7
-  },
-  "0xd9abd4cb931cb38588f4e207d4851dfb18fc2e6d": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x814bbe7b257067f81c5b72919e80726246c072f7": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xed4f35105ada0162b6d8224b2b132d2ed3d5747e": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xcfe74713d1dfd5d4502639acffeeef56211d6060": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x9c2c36dcfba51c8d32ceaf348af0a856f6261c0a": {
-    "active": false,
-    "hours_since": 880.5
-  },
-  "0x1860b4e952a94b8c7b466d41e48dab44f0d03768": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x111111125421ca6dc452d289314280a0f8842a65": {
-    "active": true,
-    "hours_since": 0.0
-  },
-  "0x9ff4f1594b124919eee05c09b6735148f00dc1f4": {
-    "active": true,
-    "hours_since": 4.0
-  },
-  "0x08e7c77368516cfc209026562ca867335ae19a09": {
-    "active": false,
-    "hours_since": 855.8
-  },
-  "0x665092990bba7bb9c4584855f966ef72d9d52437": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xc1cc4432ced2d2c99e4222b47d555a376fadde61": {
-    "active": false,
-    "hours_since": 880.8
-  },
-  "0x06a1340ad118261b8e1a0c49cae40a6a6b427548": {
-    "active": false,
-    "hours_since": 200.6
-  },
-  "0x714763129ccd49c27a5bc2b52ab7c5b6e384d85a": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x6e8b5c33ce2931b7c33f27ef3acab1964062f358": {
-    "active": false,
-    "hours_since": 880.8
-  },
-  "0x0f60641b8d36ea8b81af263650b9910376cf8e9e": {
-    "active": false,
-    "hours_since": 330.9
-  },
-  "0xfb0601da64ecc92556c613918bf921af6b8c622b": {
-    "active": false,
-    "hours_since": 954.2
-  },
-  "0xb6d1089553230a2380a4444d6d269a508ab51040": {
-    "active": true,
-    "hours_since": 10.6
-  },
-  "0x45f9198bd358b854762e309a29d3ee7e112dfa73": {
-    "active": false,
-    "hours_since": 607.6
-  },
-  "0xa0befaf0d44a9f9684edb5163be93bfc8ee353d0": {
-    "active": true,
-    "hours_since": 0.0
-  },
-  "0x68ce3bbf72ef517e7e47117db175e8acc74e8627": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xbf4195ab0b03e1eb3345dd1e83bed7650b1ed123": {
-    "active": true,
-    "hours_since": -0.0
-  },
-  "0x7cc82b06923529b124b95b444c72e55e149e5f85": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xd619ae57a06a7562cfbe228dd7bc7a2071c0c00c": {
-    "active": true,
-    "hours_since": 0.1
-  },
-  "0x2d89c07b1e8dd1da038dcdf017abf287ecb1c174": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xfc161c286c31438b2cfee361589d377aa43b68d3": {
-    "active": false,
-    "hours_since": 904.1
-  },
-  "0x526bcb5bfa1cd3508610b239452222e6794f01f7": {
-    "active": false,
-    "hours_since": 881.0
-  },
-  "0x1bf94a3b7d875c4e43b4fec72b1a3be51e83ed90": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x94abd26ebb9debe4ec6afd8799eb327bd8ecab7a": {
-    "active": true,
-    "hours_since": 10.5
-  },
-  "0x2b54443393442b9ae3cf2f932378506f98cfae53": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0xce9d165837132e0e0aad29c935f4f1d195ae0be8": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x5395a01e0adc5076f3da4c015c3e0387f5d9a09a": {
-    "active": false,
-    "hours_since": 880.5
+    "hours_since": 620.9
   },
   "0x51ed6d6e5cd0af470c1dcf24f9d3e2c57b2a0f9b": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.1
+  },
+  "0x52a073a1172a7fb96b2d6a900ccb1dae8b520830": {
+    "active": false,
+    "hours_since": 880.9
+  },
+  "0x94abd26ebb9debe4ec6afd8799eb327bd8ecab7a": {
+    "active": true,
+    "hours_since": 12.8
+  },
+  "0x3b8eb166f9f80b5429e83c699fdf9699dfbf3b81": {
+    "active": false,
+    "hours_since": 882.7
+  },
+  "0x6d8bcd9e870e22340b6c270ba6173991db0f763e": {
+    "active": true,
+    "hours_since": 12.9
   },
   "0x7125d3d2c5969b10c235e669fd80c0fa13216c62": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.2
   },
-  "0x5af365d536698e19ee5cdf998efb58b918968aef": {
+  "0x7187bc7ecc89af7926b1b00aa15cc5b92b7b161c": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 620.9
   },
-  "0x851cc19b1fcf5eb1e17496af8ea236a87eb324d3": {
-    "active": false,
-    "hours_since": 72.8
+  "0x0489a2814e133a6fc6b9435ae76bd89958eafbfa": {
+    "active": true,
+    "hours_since": 12.9
   },
-  "0xe32992ec0b4d10f6ea744b6c5a0450a5085bd681": {
+  "0x06a591c8700c531284b21a21d04be375a27d6fab": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 620.9
   },
-  "0x107f0bdb5026114428ddb198a9aa3c3ce76a70fd": {
+  "0xfc161c286c31438b2cfee361589d377aa43b68d3": {
     "active": false,
-    "hours_since": 880.8
+    "hours_since": 906.4
   },
-  "0x203d8c8a78725cc56123341763c7760adf08a6cc": {
+  "0x8447d446bf91a507a3d64d72a9a08b00324ad605": {
     "active": false,
-    "hours_since": 880.7
+    "hours_since": 620.9
   },
-  "0x0a1fc2d944d6c977a22bea647726f580f5ca7341": {
+  "0x9ff4f1594b124919eee05c09b6735148f00dc1f4": {
+    "active": true,
+    "hours_since": 6.3
+  },
+  "0xce9d165837132e0e0aad29c935f4f1d195ae0be8": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.1
   },
   "0x8fea1f941bd34f9c74d86c72ec5b6f4d8db65248": {
     "active": false,
-    "hours_since": 880.7
+    "hours_since": 883.0
   },
-  "0xf6a27130d08425725e3cd8bb3958819ac661d28c": {
+  "0x5395a01e0adc5076f3da4c015c3e0387f5d9a09a": {
     "active": false,
-    "hours_since": 880.5
+    "hours_since": 882.7
   },
-  "0xa35b6baf0c3a2ce811016d3fd629826ef40a0183": {
+  "0xedf57ec76cdb398681ee54a93a8a85f61b47cb08": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0x2af4fb83847d85b37300baa95fe7d698a3bdab2d": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0x8be159acfa3e25ce701994de78d3fdde93239cd5": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x057f3843e05244dcf702678f1660ce19eb8b3c5a": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0xb6d1089553230a2380a4444d6d269a508ab51040": {
     "active": true,
-    "hours_since": 10.6
+    "hours_since": 12.9
+  },
+  "0x06a1340ad118261b8e1a0c49cae40a6a6b427548": {
+    "active": false,
+    "hours_since": 202.9
+  },
+  "0x4d80cf67346764b55413007f65aa67eaf839158c": {
+    "active": false,
+    "hours_since": 609.8
+  },
+  "0x05a53e4e7df47b3f07c74ddfe634214737b29b83": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xf156f3e475733bbef212db1b4d3843b42b2d1b0d": {
+    "active": false,
+    "hours_since": 718.0
   },
   "0x50dd59f4c75d450ea041b7f34487f56c0a61c57d": {
     "active": true,
     "hours_since": 0.0
   },
-  "0xfd6bc1bab9b415963a58c4bff8ccee625c548969": {
+  "0x107f0bdb5026114428ddb198a9aa3c3ce76a70fd": {
     "active": false,
-    "hours_since": 880.9
+    "hours_since": 883.1
   },
-  "0x057f3843e05244dcf702678f1660ce19eb8b3c5a": {
+  "0x71d468ba1ce7c524a12545a1a4cfae2b8b816411": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.2
   },
-  "0x06a591c8700c531284b21a21d04be375a27d6fab": {
+  "0x0d7901665a57dd93647ebf7da232629e5f4dd591": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 858.1
   },
-  "0x52a073a1172a7fb96b2d6a900ccb1dae8b520830": {
+  "0x5af365d536698e19ee5cdf998efb58b918968aef": {
     "active": false,
-    "hours_since": 878.6
+    "hours_since": 620.9
   },
-  "0x69a4dbc3d92e4f35e7852b784716c59af30b6772": {
+  "0xceb71ad8b896e88aa65674188020cf2bcb7e01bf": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 620.9
   },
-  "0x15fcd35dcf11d41a69c34182951499126d3f6516": {
+  "0x5d6ba15bf83fe3b30427a42f68e9086690a83d8e": {
     "active": false,
-    "hours_since": 855.9
-  },
-  "0xc259244c1593cceac31cf700dee68e0e164b71c6": {
-    "active": false,
-    "hours_since": 855.9
-  },
-  "0x878bd038004904665956cf2a41a6667339437cd8": {
-    "active": true,
-    "hours_since": 10.7
-  },
-  "0x4d80cf67346764b55413007f65aa67eaf839158c": {
-    "active": false,
-    "hours_since": 607.6
-  },
-  "0x6513b587e9592dc1ed90d7b9fac1d4189273d400": {
-    "active": false,
-    "hours_since": 34.1
-  },
-  "0x3226caf120f504cda0a21fbbcce83afee3cec8fa": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0xefc63467e013b88ff056dee5e7c984985b0aa6db": {
-    "active": false,
-    "hours_since": 56.4
-  },
-  "0xf156f3e475733bbef212db1b4d3843b42b2d1b0d": {
-    "active": false,
-    "hours_since": 715.8
-  },
-  "0xbbe58d8e0a7ec5197fc2850693705e447cd8b6a6": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0x91c06679bd78695dc35e80a4175bc7fc2a1088b8": {
-    "active": true,
-    "hours_since": 0.3
-  },
-  "0x36451f6c8a46e3510fbd2007d3d1533fcdf5c219": {
-    "active": false,
-    "hours_since": 880.7
-  },
-  "0x22ea3a6c8b1b0ffed52f71c6ce90d01643cf2cfd": {
-    "active": false,
-    "hours_since": 618.6
-  },
-  "0x18efd7ece1b777f1a550d0ce3833d8ed6a3cfe29": {
-    "active": false,
-    "hours_since": 880.7
-  },
-  "0x597d104dc2c10b09bca46b12b27a05f0d69f8607": {
-    "active": false,
-    "hours_since": 880.6
+    "hours_since": 620.9
   },
   "0x5db1eebbf161584f0095e7bcdce17f6a786570d4": {
     "active": false,
-    "hours_since": 880.7
+    "hours_since": 883.0
   },
-  "0x80347ac65566c80d66edc38c6ac5683fd19188fd": {
+  "0x08e7c77368516cfc209026562ca867335ae19a09": {
     "active": false,
-    "hours_since": 880.8
+    "hours_since": 858.1
   },
-  "0x05a53e4e7df47b3f07c74ddfe634214737b29b83": {
+  "0x6513b587e9592dc1ed90d7b9fac1d4189273d400": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 36.3
   },
-  "0xdb48e4360941c60c14b0beff72a0ba096339c15a": {
+  "0x45f9198bd358b854762e309a29d3ee7e112dfa73": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 609.8
   },
-  "0x894f5344141e4f6ba535b540ba4db89b5950fe63": {
+  "0x851cc19b1fcf5eb1e17496af8ea236a87eb324d3": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 75.1
   },
-  "0x9ddec89233b7358001aeb80c912dae0e0542dfdf": {
+  "0x285ef4947ea90bf377bd62508f89249de04f3f1c": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 858.2
   },
-  "0x98b2b96ac1bc59f76ea59b56ee6b540b4ca1d3c1": {
+  "0xd792faf42fac43db1fc60c617fda5f711622ce9f": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 381.7
   },
-  "0x67f6239a5477766211189e774b041456d32c0985": {
+  "0xe1b5e58ef96c5b7fdc54cdeecfa47d4ff53c8bc4": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 858.2
   },
-  "0xaa33684b9d07903f50e72a8dc74f8ac1f8acf55a": {
+  "0x4250e9c4158bb9cf602d7b713e20190e6d8bef4d": {
     "active": false,
-    "hours_since": 880.9
+    "hours_since": 883.2
   },
-  "0xab03a345258ab3154e5ddd9a884c8621377eafe6": {
+  "0x2d89c07b1e8dd1da038dcdf017abf287ecb1c174": {
     "active": false,
-    "hours_since": 880.9
+    "hours_since": 620.9
+  },
+  "0x2b54443393442b9ae3cf2f932378506f98cfae53": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0xec8c0e8dc2712baee245f002a9edc559da223481": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x481203772cb3bc1f3af5d00d94360315c33405d2": {
+    "active": true,
+    "hours_since": 12.7
+  },
+  "0xb1ddd16a1af35531e91be3adefcee7fdde183a27": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0xc0b0f5afb40d32671b803d95ef5e92f563013c56": {
+    "active": true,
+    "hours_since": 12.8
   },
   "0x43d4a626d2b0525931c922f42948bfdd3c3cf1bd": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.1
   },
-  "0xeb400136b25ec3b1f954b4b8972aefdbcdbf58b8": {
+  "0xdb48e4360941c60c14b0beff72a0ba096339c15a": {
     "active": false,
-    "hours_since": 855.9
+    "hours_since": 858.1
+  },
+  "0x93e405ac054452c5f1ee76ad7274f477e864ffb2": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x526bcb5bfa1cd3508610b239452222e6794f01f7": {
+    "active": false,
+    "hours_since": 883.2
+  },
+  "0x75fa6f6811c88f45261e1a23e91212a6c675a370": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x22ea3a6c8b1b0ffed52f71c6ce90d01643cf2cfd": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xcfe74713d1dfd5d4502639acffeeef56211d6060": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x639fa26d6b7132d65ed20ee033313eab59e18bc1": {
+    "active": true,
+    "hours_since": 0.1
+  },
+  "0x665092990bba7bb9c4584855f966ef72d9d52437": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x17ed96d91880449d2f7aab7156c63cfaac78def4": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x894f5344141e4f6ba535b540ba4db89b5950fe63": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x9ea86b09d237a0d1405dc536093430fac5068c0f": {
+    "active": true,
+    "hours_since": 13.2
+  },
+  "0x6d92c912a165f0cd76cabbbf6de7f29253857e18": {
+    "active": false,
+    "hours_since": 609.7
+  },
+  "0x80347ac65566c80d66edc38c6ac5683fd19188fd": {
+    "active": false,
+    "hours_since": 883.1
+  },
+  "0x9ddec89233b7358001aeb80c912dae0e0542dfdf": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0x91c06679bd78695dc35e80a4175bc7fc2a1088b8": {
+    "active": true,
+    "hours_since": 0.1
+  },
+  "0x79d99b721f62a6ed1197c33e69ef930d1b274234": {
+    "active": false,
+    "hours_since": 883.0
+  },
+  "0x3b0adad60d1cd1b1da10d98f4c80337cd0a51c45": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xae2f8a70a5ea8dd9a45e5c74a5b926ac2de87736": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x807bbf648bb20af3603fa94028291309c1955b9b": {
+    "active": false,
+    "hours_since": 882.7
+  },
+  "0xa177cea0ab7276170f4b99022457fcf456fe11cc": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x81467f4563452abd26113803a3f645f859bfb3de": {
+    "active": false,
+    "hours_since": 906.1
+  },
+  "0x7d4482928053ca49a6a49a449d2bbb470fab90a7": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0x878bd038004904665956cf2a41a6667339437cd8": {
+    "active": true,
+    "hours_since": 12.9
+  },
+  "0x36fa58a7e3e07e9398d12dce261c523a496ae708": {
+    "active": false,
+    "hours_since": 882.7
+  },
+  "0xf6a27130d08425725e3cd8bb3958819ac661d28c": {
+    "active": false,
+    "hours_since": 882.7
+  },
+  "0x0b58299eb3087ee8d221a00dff7b31c65dfe2820": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xc259244c1593cceac31cf700dee68e0e164b71c6": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x0d1b2bd8f976249f64b14aa0c20614ea919c5c83": {
+    "active": true,
+    "hours_since": 12.8
+  },
+  "0xecdb008731d4689910efa3c3f3fb88a61e43239a": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x1bf94a3b7d875c4e43b4fec72b1a3be51e83ed90": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x06fd54c04c5abb8e5cbe5dd6701b5c1c58aef10e": {
+    "active": false,
+    "hours_since": 609.8
+  },
+  "0x67f6239a5477766211189e774b041456d32c0985": {
+    "active": false,
+    "hours_since": 620.9
   },
   "0xb7d7e99e7af692ce1b745165a0aed0e7088e500c": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 620.9
   },
-  "0x8be159acfa3e25ce701994de78d3fdde93239cd5": {
-    "active": false,
-    "hours_since": 855.9
+  "0x498581ff718922c3f8e6a244956af099b2652b2b": {
+    "active": true,
+    "hours_since": -0.0
   },
-  "0xedf57ec76cdb398681ee54a93a8a85f61b47cb08": {
+  "0xa35b6baf0c3a2ce811016d3fd629826ef40a0183": {
+    "active": true,
+    "hours_since": 12.9
+  },
+  "0x0a1fc2d944d6c977a22bea647726f580f5ca7341": {
     "active": false,
-    "hours_since": 618.6
+    "hours_since": 858.2
+  },
+  "0x0f60641b8d36ea8b81af263650b9910376cf8e9e": {
+    "active": false,
+    "hours_since": 333.2
+  },
+  "0xed4f35105ada0162b6d8224b2b132d2ed3d5747e": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0xd0667b1d34234f70d14de3fed25d47a33047f807": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x203d8c8a78725cc56123341763c7760adf08a6cc": {
+    "active": false,
+    "hours_since": 883.0
+  },
+  "0x3226caf120f504cda0a21fbbcce83afee3cec8fa": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0x111111125421ca6dc452d289314280a0f8842a65": {
+    "active": true,
+    "hours_since": -0.0
+  },
+  "0x69a4dbc3d92e4f35e7852b784716c59af30b6772": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x18efd7ece1b777f1a550d0ce3833d8ed6a3cfe29": {
+    "active": false,
+    "hours_since": 883.0
+  },
+  "0xeb400136b25ec3b1f954b4b8972aefdbcdbf58b8": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x1860b4e952a94b8c7b466d41e48dab44f0d03768": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0xfd6bc1bab9b415963a58c4bff8ccee625c548969": {
+    "active": false,
+    "hours_since": 883.2
+  },
+  "0x68ce3bbf72ef517e7e47117db175e8acc74e8627": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0xfb0601da64ecc92556c613918bf921af6b8c622b": {
+    "active": false,
+    "hours_since": 956.5
+  },
+  "0x9bd6fd9d8485646f4b2232274aa4d335dac30cb2": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xf73da48f34b6e01c08bd56e27729e88e60538e5d": {
+    "active": true,
+    "hours_since": 18.7
+  },
+  "0x429333b40bcbf3dba5b61300d880967133c9c4d7": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0xd619ae57a06a7562cfbe228dd7bc7a2071c0c00c": {
+    "active": true,
+    "hours_since": 0.1
+  },
+  "0x4a6d73972b78d7a9d03723614049a82b824b9a19": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x7cc82b06923529b124b95b444c72e55e149e5f85": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x2d4f1054f194eb16e35adc89f605c028d3abb0df": {
+    "active": false,
+    "hours_since": 609.7
+  },
+  "0xd9abd4cb931cb38588f4e207d4851dfb18fc2e6d": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0xab03a345258ab3154e5ddd9a884c8621377eafe6": {
+    "active": false,
+    "hours_since": 883.2
+  },
+  "0x5338d10fc227497cf37fc68124419b7e52f35872": {
+    "active": false,
+    "hours_since": 858.2
+  },
+  "0x12d2e9c0014d60c13c8e37f97e6e67f67f584628": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x714763129ccd49c27a5bc2b52ab7c5b6e384d85a": {
+    "active": false,
+    "hours_since": 858.1
+  },
+  "0x814bbe7b257067f81c5b72919e80726246c072f7": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xbf4195ab0b03e1eb3345dd1e83bed7650b1ed123": {
+    "active": true,
+    "hours_since": -0.0
+  },
+  "0xbbe58d8e0a7ec5197fc2850693705e447cd8b6a6": {
+    "active": false,
+    "hours_since": 620.9
+  },
+  "0xfbd7eb63365c92a0e62841a218feb0fe98d82d0e": {
+    "active": true,
+    "hours_since": 13.0
+  },
+  "0xc1cc4432ced2d2c99e4222b47d555a376fadde61": {
+    "active": false,
+    "hours_since": 883.1
   }
 }
